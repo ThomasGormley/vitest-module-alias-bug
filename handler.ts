@@ -1,11 +1,7 @@
 import { getStringFromWithin } from "./string";
 
 export async function handler() {
-  const foo = await handleFoo();
+  const foo = getStringFromWithin();
 
   console.log(foo);
-}
-
-async function handleFoo() {
-  return getStringFromWithin();
 }
